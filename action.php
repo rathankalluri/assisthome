@@ -13,7 +13,7 @@ if (isset($post_data["result"]["action"])) {
     $url        = "http://rathankalluri.com/lab/fetch.php?getdetails";
     $speak      = file_get_contents($url);
     error_log($speak, 0);
-    $data = json_decode($speak, true);
+    //$data = json_decode($speak, true);
     //$speak      = substr($speak, 0, strpos($speak, "(c)"));  
 }     
 
