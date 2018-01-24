@@ -21,8 +21,8 @@ $src = "agent";
 
 $parameters = array(
     "source" => $src,
-    "speech" => $data,
-    "displayText" => $data,
+    "speech" => $speak,
+    "displayText" => $speak,
     "contextOut" => []
 );
 sendMessage($parameters);
