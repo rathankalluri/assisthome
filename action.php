@@ -9,7 +9,7 @@ $post      = file_get_contents("php://input");
 $post_data = json_decode($post, True);
 
 if (isset($post_data["result"]["action"])) {
-    $url        = "http://rathankalluri.com/lab/fetch.php?getdetails;
+    $url        = "http://rathankalluri.com/lab/fetch.php?getdetails";
     $speak      = file_get_contents($url);
     $data = json_decode($speak, true);
     //$speak      = substr($speak, 0, strpos($speak, "(c)"));  
@@ -24,6 +24,4 @@ $parameters = array(
     "contextOut" => []
 );
 sendMessage($parameters);
-}
-
 ?>
